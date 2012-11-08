@@ -1,0 +1,301 @@
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+html {
+  background: url('../images/body_background.png');
+}
+body {
+  height: 100%;
+}
+
+body h5 {
+  line-height: 17px;
+}
+
+body p {
+  color: #333333;
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-left .caret {
+  float: right;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+/* ==========================================================================
+   Header section styles.
+   ========================================================================== */
+#section-header .navbar-inverse {
+  margin-bottom: 0;
+  background: #3c3c3c;
+  height: 52px;
+}
+
+#section-header .navbar-inner {
+  padding: 0 50px;
+}
+
+#section-header .gray-navbar {
+  background: #dbdbdb;
+  border: none;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px #b0b0b0;
+  -webkit-box-shadow: 0px 2px 5px 0px #b0b0b0;
+  -moz-box-shadow: 0px 2px 5px 0px #b0b0b0;
+}
+
+#section-header .brand {
+  color: white;
+  padding: 15px 20px 10px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.region-post {
+  float: right;
+  padding-top: 9px;
+}
+
+.region-lang {
+  display: inline-block;
+  float: right;
+  padding-top: 14px;
+  width: 50px;
+  background-image: url('../images/header_flags.png');
+  background-repeat: no-repeat;
+  background-position: 0px 21px;
+  margin-left: 20px;
+  padding-left: 23px;
+  height: 24px;
+  width: 62px;
+}
+
+#section-header  .btn-danger {
+  background : #fc2727;
+  border-radius: 1px;
+  padding: 1px 12px;
+  text-shadow: 1px 0px 3px rgba(71, 68, 71, 1);
+}
+
+#section-header .navbar-form .dropdown-toggle {
+  cursor: pointer;
+  height: 30px;
+  margin-top: 1px;
+}
+
+#section-header .btn-group .dropdown-menu {
+  width: 99%;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+}
+
+.region-search {
+  margin-top: 5px;
+}
+
+#section-header .group {
+  position : relative;
+  margin: 10px 0 0 0;
+  width: 10%;
+}
+
+#section-header .navbar-form {
+   float: left;
+   width: 90%;
+ }
+
+#section-header .navbar-form .btn-group {
+  width: 23%;
+}
+
+#section-header .input-xxlarge {
+  width: 62%;
+}
+
+#section-header .input-large {
+  width: 100%;
+}
+
+/* ==========================================================================
+   Content section styles.
+   ========================================================================== */
+#section-content {
+  margin: 0 auto;
+  width: 920px;
+  overflow:auto;
+  padding-bottom: 70px; /* this needs to be bigger than footer height*/
+  position : relative;
+}
+
+#section-content .muted {
+  font-size: 10px;
+}
+
+.region-content {
+  width: 450px;
+  float: left;
+}
+
+.region-sidebar-first,
+.region-sidebar-second {
+  width: 225px;
+  float: left;
+  position : relative;
+}
+
+.small-block,
+.large-block {
+  margin: 5px;
+  background: #ffffff;
+  float: left;
+  border: 1px solid #e1e1e1;
+  position: relative;
+}
+
+.small-block img {
+  width: 191px;
+  height: auto;
+}
+
+.small-block {
+  width: 212px;
+}
+
+.dedicated {
+  background: #fef5ca;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+}
+
+.block {
+  position : relative;
+}
+
+.image {
+  position: relative;
+}
+
+.price {
+  background: #ff2929;
+  color: #ffffff;
+  font-weight: bold;
+  position : absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 9px;
+}
+
+.large-block {
+  width: 436px;
+}
+
+.large-block img {
+  width: 421px;
+  height: auto;
+}
+
+.image-gallery {
+  display: inline-block;
+}
+
+.image-gallery img {
+  width: 37.6px;
+  height: 37.6px;
+  float: left;
+  cursor : pointer;
+}
+
+.banner img {
+  width: 215px;
+}
+
+#section-content .content {
+  padding: 12px;
+}
+
+.content-info {
+  background: #efefef;
+  padding: 6px 12px;
+  opacity: 0.5;
+}
+
+#section-content .muted {
+  color: #4f4f4f;
+}
+
+/* ==========================================================================
+   Footer section styles.
+   ========================================================================== */
+#section-footer {
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  padding-top:20px;
+  background: #3C3C3C;
+  color: #ffffff;
+}
+
+/* jQuery UI styles. */
+#slider-wrapper {
+  background-image: url(../images/header_range_background.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  margin-top: 4px;
+}
+
+.ui-slider-horizontal {
+  height: 15px;
+}
+
+.ui-slider {
+  position: relative;
+  width: 10px;
+  margin-left: 2px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  position: relative;
+  background-image: url('../images/header_range_button.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
