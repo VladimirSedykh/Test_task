@@ -103,7 +103,7 @@ body p {
 
 #section-header .group {
   position : relative;
-  margin: 10px 0 0 0;
+  margin: 12px 0 0 0;
   width: 10%;
 }
 
@@ -127,12 +127,16 @@ body p {
 /* ==========================================================================
    Content section styles.
    ========================================================================== */
-#section-content {
-  margin: 0 auto;
-  width: 920px;
+.container {
   overflow:auto;
   padding-bottom: 70px; /* this needs to be bigger than footer height*/
-  position : relative;
+  max-width: 950px;
+}
+
+@media (min-width: 1200px) {
+  body .container {
+    width: 950px;
+  }
 }
 
 #section-content .muted {

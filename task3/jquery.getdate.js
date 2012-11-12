@@ -1,20 +1,30 @@
-  jQuery.fn.getdate = function () {
+  jQuery.fn.getdate = function (options) {
+
+    var settings = jQuery.extend({
+      format : 'days',
+      element : 'time',
+      attribute : 'data-interval'
+    }, options);
 
     function getDateDiff(dateF, dateL) {
       // Return difference in days;
-      var divider = 86400000;
+      if(settings.format === 'years')      var divider = 31536000000;
+      else if(settings.format === 'month') divider = 2592000000;
+      else if(settings.format === 'days')  divider = 86400000;
+      else if(settings.format === 'hours') divider = 3600000;
+
       var diff = Math.round(((Date.parse(dateF) - Date.parse(dateL)) / divider));
 
       if (diff > 0) {
-        return diff + ' days';
+        return diff + ' ' + settings.format;
       } else if (diff === 0 || diff === 1) {
-        return 'one day';
+        return 'one ' + settings.format.replace('s', '');
       } else {
-        return '<p class="text-error">incorrect date: (' + diff + ' days)</p>';
+        return '<p class="text-error">incorrect date: (' + diff + ' ' + settings.format + ')</p>';
       }
     }
 
-    function datePartFormat(datesArr, field){
+    function datePartFormat(datesArr, field) {
       var datePart = {};
       datePart.all = (field === 'first') ? new Date(datesArr[0]) : new Date(datesArr[datesArr.length - 1]);
       datePart.year = datePart.all.format('yyyy');
@@ -70,8 +80,8 @@
       return result;
     }
 
-    jQuery.each(jQuery(this).find(jQuery("[data-interval]")), function() {
-      var datesArr = jQuery(this).attr('data-interval')
+    jQuery.each(jQuery(this).find(jQuery(settings.element)), function() {
+      var datesArr = jQuery(this).attr(settings.attribute)
                             .replace(/-/g,"/")
                             .replace(/[T]/g,"/")
                             .replace(/[Z]/g,"")

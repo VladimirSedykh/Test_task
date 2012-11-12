@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0">
   <title>Test task | 1</title>
 
   <!-- Join default css styles file. -->
@@ -11,8 +11,8 @@
   <!-- jQuery UI -->
   <script src="js/jquery-ui.js"></script>
   <!-- Bootstrap css -->
-  <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css" media="all">
   <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css" media="all">
+  <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css" media="all">
   <!-- Bootstrap js -->
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -20,16 +20,12 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <!-- join jQuery UI slider. -->
-  <script>
-    $(function() {
-      $( "#slider" ).slider();
-    });
-  </script>
-  <!-- Join js code of Task 1. -->
-  <script type="text/javascript" src="js/task1.js"></script>
-  <!-- Join js code of Task 4. -->
-  <script type="text/javascript" src="../task4/task4.js"></script>
+  <!--[if lt IE 9]>
+  <link type="text/css" rel="stylesheet" href="css/mainIE9.css" media="all">
+  <![endif]-->
+
+    <!-- Join js code of Task 1. -->
+  <script type="text/javascript" src="js/ExamplePage.js"></script>
 </head>
 
 <body>
@@ -38,7 +34,6 @@
   <header id="section-header" class="clearfix">
     <div class="navbar navbar-inverse">
       <div class="navbar-inner">
-        <div class="container">
           <div class="region-branding">
             <a href="#" class="brand">Classified Ads</a>
           </div>
@@ -50,12 +45,10 @@
           <div class="region-post">
             <a href="#" class="btn btn-danger btn-mini">Post your Ad</a>
           </div>
-        </div>
       </div>
     </div>
     <div class="navbar">
       <div class="navbar-inner gray-navbar">
-        <div class="container">
           <div class="region-search">
             <div class="group navbar-search">
               <p class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Los Angeles</strong>
@@ -84,190 +77,189 @@
               <button type="submit" class="btn"><strong>Search</strong></button>
             </form>
           </div>
-        </div>
       </div>
     </div>
   </header>
 
   <!-- section-content -->
-  <section id="section-content">
-    <div class="region-content">
-      <div class="block small-block">
-        <div class="content">
-          <div class="image">
-            <span class="price">$2,500</span>
-            <img src="content/images/sidebar_1.png" title="Bueno y uhorrador de gasolina" alt="Bueno">
+  <section id="section-content" class="container">
+      <div class="region-content">
+        <div class="block small-block">
+          <div class="content">
+            <div class="image">
+              <span class="price">$2,500</span>
+              <img src="content/images/sidebar_1.png" title="Bueno y uhorrador de gasolina" alt="Bueno">
+            </div>
+            <h5>Bueno y uhorrador de gasolina</h5>
+            <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
           </div>
-          <h5>Bueno y uhorrador de gasolina</h5>
-          <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
-        </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block small-block">
-        <div class="content">
-          <span class="price">$5,500</span>
-          <h5>Bonita van familliar</h5>
-          <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
-        </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block small-block">
-        <div class="content">
-          <h5>Limpio</h5>
-          <p>Mas nada impede que o proprietário do carro instale dispositivo num carro turbinado de fábrica. Abraços.</p>
-        </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block large-block">
-        <div class="content">
-          <div class="image">
-            <span class="price">$1.302,500</span>
-            <img src="content/images/sidebar_5.jpg" title="Golf turbo original" alt="Golf turbo original">
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
           </div>
-          <h5>Golf turbo original</h5>
-          <p>São algumas prerrogativas que fazem o turbo original
-            ser diferente do turbo adaptado.. em primeiro lugar a montadora
-            tem que se preocupar com as leis que giram em torno de si, especialmente
-            falando nesse caso seria a lei de ruídos.
-          </p>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 06:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block small-block">
-        <div class="content">
-          <div class="image">
-            <span class="price">$302,500</span>
-            <img src="content/images/sidebar_6.jpg" title="Honda" alt="Golf turbo original">
+        <div class="block small-block">
+          <div class="content">
+            <span class="price">$5,500</span>
+            <h5>Bonita van familliar</h5>
+            <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
           </div>
-          <div class="image-gallery">
-            <img src="content/images/sidebar_4_1.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_4_2.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_4_3.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_4_4.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_4_5.png" title="Honda" alt="Bueno">
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
           </div>
-          <h5>Honda van familliar</h5>
-          <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block small-block">
-        <div class="content">
-          <img src="content/images/sidebar_4.jpg" title="Bueno" alt="Banner">
-        </div>
-        <div class="content-info">
-          <p class="muted">Cars > Honda</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-    </div>
-    <div class="region-sidebar-first">
-      <div class="block small-block dedicated">
-        <div class="content">
-          <div class="image">
-            <span class="price">$900,500</span>
-            <img src="content/images/sidebar_2.png" title="Bueno" alt="Bueno">
+        <div class="block small-block">
+          <div class="content">
+            <h5>Limpio</h5>
+            <p>Mas nada impede que o proprietário do carro instale dispositivo num carro turbinado de fábrica. Abraços.</p>
           </div>
-          <div class="image-gallery">
-            <img src="content/images/sidebar_2_1.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_2_2.png" title="Honda" alt="Bueno">
-            <img src="content/images/sidebar_2_3.png" title="Honda" alt="Bueno">
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
           </div>
-          <h5>Dodge ram 97</h5>
-          <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > Dodge</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
-        </div>
-      </div>
-      <div class="block small-block">
-        <div class="content">
-          <div class="image">
-            <img src="content/images/sidebar_1.png" title="Bueno" alt="Bueno">
+        <div class="block large-block">
+          <div class="content">
+            <div class="image">
+              <span class="price">$1.302,500</span>
+              <img src="content/images/sidebar_5.jpg" title="Golf turbo original" alt="Golf turbo original">
+            </div>
+            <h5>Golf turbo original</h5>
+            <p>São algumas prerrogativas que fazem o turbo original
+              ser diferente do turbo adaptado.. em primeiro lugar a montadora
+              tem que se preocupar com as leis que giram em torno de si, especialmente
+              falando nesse caso seria a lei de ruídos.
+            </p>
           </div>
-          <h5>Golf todo original</h5>
-          <p>MercadoLivre não vende este item e não participa em qualquer negociação, venda ou operações.
-            Apenas limita-se a publicar anúncios de seus usuários.
-          </p>
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 06:15 am</strong></p>
+          </div>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > Golf</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
+        <div class="block small-block">
+          <div class="content">
+            <div class="image">
+              <span class="price">$302,500</span>
+              <img src="content/images/sidebar_6.jpg" title="Honda" alt="Golf turbo original">
+            </div>
+            <div class="image-gallery">
+              <img src="content/images/sidebar_4_1.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_4_2.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_4_3.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_4_4.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_4_5.png" title="Honda" alt="Bueno">
+            </div>
+            <h5>Honda van familliar</h5>
+            <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
+        </div>
+        <div class="block small-block">
+          <div class="content">
+            <img src="content/images/sidebar_4.jpg" title="Bueno" alt="Banner">
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > Honda</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
         </div>
       </div>
-      <div class="block small-block dedicated">
-        <div class="content">
-          <span class="price">$1,500</span>
-          <h5>Bonita original</h5>
-          <p>Apenas limita-se a publicar anúncios de seus usuários.</p>
+      <div class="region-sidebar-first">
+        <div class="block small-block dedicated">
+          <div class="content">
+            <div class="image">
+              <span class="price">$900,500</span>
+              <img src="content/images/sidebar_2.png" title="Bueno" alt="Bueno">
+            </div>
+            <div class="image-gallery">
+              <img src="content/images/sidebar_2_1.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_2_2.png" title="Honda" alt="Bueno">
+              <img src="content/images/sidebar_2_3.png" title="Honda" alt="Bueno">
+            </div>
+            <h5>Dodge ram 97</h5>
+            <p>Vendo un Honda civic 93 color rojo automatico motor y transmission.</p>
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > Dodge</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > Bonita</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
+        <div class="block small-block">
+          <div class="content">
+            <div class="image">
+              <img src="content/images/sidebar_1.png" title="Bueno" alt="Bueno">
+            </div>
+            <h5>Golf todo original</h5>
+            <p>MercadoLivre não vende este item e não participa em qualquer negociação, venda ou operações.
+              Apenas limita-se a publicar anúncios de seus usuários.
+            </p>
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > Golf</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
+        </div>
+        <div class="block small-block dedicated">
+          <div class="content">
+            <span class="price">$1,500</span>
+            <h5>Bonita original</h5>
+            <p>Apenas limita-se a publicar anúncios de seus usuários.</p>
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > Bonita</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
+        </div>
+        <div class="block small-block">
+          <div class="content">
+            <span class="price">$5,500</span>
+            <h5>200 golf turbo</h5>
+            <p>MercadoLivre não vende este item e não participa em qualquer negociação, venda ou operações.
+              Apenas limita-se a publicar anúncios de seus usuários.
+            </p>
+          </div>
+          <div class="content-info">
+            <p class="muted">Cars > 2000 Golf</p>
+            <p class="muted"><strong>Today, 11:15 am</strong></p>
+          </div>
         </div>
       </div>
-      <div class="block small-block">
-        <div class="content">
-          <span class="price">$5,500</span>
-          <h5>200 golf turbo</h5>
-          <p>MercadoLivre não vende este item e não participa em qualquer negociação, venda ou operações.
-            Apenas limita-se a publicar anúncios de seus usuários.
-          </p>
+      <div class="region-sidebar-second">
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_1.png" title="Banner 1" alt="Banner">
+          </span>
         </div>
-        <div class="content-info">
-          <p class="muted">Cars > 2000 Golf</p>
-          <p class="muted"><strong>Today, 11:15 am</strong></p>
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_2.png" title="Banner 2" alt="Banner">
+           </span>
+        </div>
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_3.png" title="Banner 3" alt="Banner">
+          </span>
+        </div>
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_4.png" title="Banner 4" alt="Banner">
+          </span>
+        </div>
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_5.png" title="Banner 4" alt="Banner">
+          </span>
+        </div>
+        <div class="block small-block">
+          <span class="banner">
+            <img src="content/images/banner_6.png" title="Banner 4" alt="Banner">
+          </span>
         </div>
       </div>
-    </div>
-    <div class="region-sidebar-second">
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_1.png" title="Banner 1" alt="Banner">
-        </span>
-      </div>
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_2.png" title="Banner 2" alt="Banner">
-         </span>
-      </div>
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_3.png" title="Banner 3" alt="Banner">
-        </span>
-      </div>
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_4.png" title="Banner 4" alt="Banner">
-        </span>
-      </div>
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_5.png" title="Banner 4" alt="Banner">
-        </span>
-      </div>
-      <div class="block small-block">
-        <span class="banner">
-          <img src="content/images/banner_6.png" title="Banner 4" alt="Banner">
-        </span>
-      </div>
-    </div>
   </section>
 </div>
   <!-- section-footer -->
